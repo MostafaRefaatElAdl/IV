@@ -104,7 +104,7 @@ Inovola.Task
 
 ---
 
-##️ Weather Endpoint
+## Weather Endpoint
 
 ```
 GET /api/weather?city={cityName}
@@ -116,7 +116,7 @@ GET /api/weather?city={cityName}
 
 ---
 
-##️ Database
+## Database
 
 - SQLite is used for simplicity and ease of setup.
 - `Users` table includes:
