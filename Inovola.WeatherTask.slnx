@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="Inovola.Application/Inovola.Application.csproj" />
+  <Project Path="Inovola.Domain/Inovola.Domain.csproj" />
+  <Project Path="Inovola.Infrastructure/Inovola.Infrastructure.csproj" />
+  <Project Path="Inovola.Tests/Inovola.Tests.csproj" />
+  <Project Path="Inovola.WeatherTask/Inovola.Api.csproj" />
+</Solution>

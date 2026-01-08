@@ -1,0 +1,6 @@
+@Inovola.WeatherTask_HostAddress = http://localhost:5228
+
+GET {{Inovola.WeatherTask_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
