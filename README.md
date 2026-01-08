@@ -139,6 +139,76 @@ EF Core migrations are located in the **Infrastructure** project.
 4. Use Postman to test the endpoints
 
 ---
+## API Endpoints
+
+| Method | Endpoint | Auth Required | Description |
+|------|---------|---------------|-------------|
+| POST | `/api/auth/register` | ❌ No | Register a new user |
+| POST | `/api/auth/login` | ❌ No | Login and receive JWT token |
+| GET  | `/api/weather?city={city}` | ✅ Yes | Get weather data for a city |
+
+---
+
+## Register
+
+**POST** `/api/auth/register`
+
+Request body:
+```json
+{
+  "email": "test@test.com",
+  "password": "123456"
+}
+```
+
+Response:
+```json
+{
+  "token": "<jwt-token>"
+}
+```
+
+---
+
+## Login
+
+**POST** `/api/auth/login`
+
+Request body:
+```json
+{
+  "email": "test@test.com",
+  "password": "123456"
+}
+```
+
+Response:
+```json
+{
+  "token": "<jwt-token>"
+}
+```
+
+---
+
+## Get Weather (Protected)
+
+**GET** `/api/weather?city=Cairo`
+
+Headers:
+```
+Authorization: Bearer <jwt-token>
+```
+
+Response:
+```json
+{
+  "city": "Cairo",
+  "temperature": 28,
+  "condition": "Sunny"
+}
+```
+---
 
 ## Testing
 
